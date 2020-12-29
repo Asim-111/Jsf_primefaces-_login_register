@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+
+</h:head>
+<f:view contentType="text/html">
+
+    <h:form>
+        <p:menubar>
+            <p:menuitem style="font-weight: bolder" url="index.xhtml" value="Assignment"></p:menuitem>
+            <f:facet name="options">
+                <p:button outcome="register.xhtml" value="Register" icon="pi pi-star"
+                          style="margin-right:20px;"></p:button>
+                <p:button outcome="login.xhtml" value="Login" icon="pi pi-star" style="margin-right:20px;"></p:button>
+            </f:facet>
+
+            <f:facet name="options">
+                <p:inputText style="margin:1px 10px 1px 1px;" placeholder="Search"/>
+            </f:facet>
+        </p:menubar>
+
+        <p:outputPanel deferred="true">
+            <div class="all-classes-container">
+                <h2>ASSALAM-O-ALIKUM</h2>
+                <h3>Description of project</h3>
+                <p>1. Create a Registration Page with following fields in JSF with Primefaces and store the data in database.</p>
+                <ul>
+                    <li>a) Username</li>
+
+                    <li>b) First Name</li>
+
+                    <li>c) Last Name</li>
+
+                    <li>d) Email</li>
+
+                    <li>e) Password</li>
+
+                    <li>f) Confirm Password</li>
+
+                    <li> g) Date of Birth</li>
+
+                    <li>h) Gender</li>
+                </ul>
+
+                <p>2. Create a Login Page and login with username and password from the saved data.</p>
+
+                <p>3. User should login into a page showing first name, last name, email, date of birth and gender of all users in tabular form.</p>
+            </div>
+        </p:outputPanel>
+
+    </h:form>
+</f:view>
+</html>
